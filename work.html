@@ -2,58 +2,161 @@
 
 <html>
 <head>
-    <title>Work</title>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </head>
 
-<link rel="stylesheet" type="text/css" href="home.css">
+
 
 <body>
-    
-    
-    
-    <div class="header">
-        
 
-                <div class="search">
-                    <form action="http://www.mywebsiteurl.com/search.php">
-                        <input type="text" name="search" placeholder="Search Site..."/>
-                        <input type="submit" value="Search"/>
-                    </form>
-                </div>  
-             
-    </div>      
-    
-    
-    <div class="body">
-        
-        <div class="gallery">
-        
-        <img src="images/gallery1.png">
-        <img src="images/gallery2.png">
-        <img src="images/gallery3.png">
-        <img src="images/gallery4.png">
-        <img src="images/gallery5.png">
-        <img src="images/gallery6.png">
-        <img src="images/gallery7.png">
-        <img src="images/gallery8.png">
-        <img src="images/gallery9.png">
-        <img src="images/gallery10.png">
-        <img src="images/gallery11.png">
-        <img src="images/gallery12.png"> 
-        
-    </div>
-        
-    </div>
-    
-    
-    <div class="footer">
-        <div class="social">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+                <span class="glyphicon glyphicon-menu-hamburger" ></span>
+            </button>
             
         </div>
+        <div class="container">
+            <div class="row">
+                <div id="logo" class="">
+                    <img src="img/logo.png">
+                </div>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="">Work</a></li>
+                        <li><a href="artists.html" class="">Artists</a></li>
+                        <li><a href="about.html" class="">About</a></li>
+                        <li><a href="#" class="">Search</a></li>
+        
+        
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
+
+    
     
 
+<div class="galleryBody container">
+    
+    <div class="selectors">
+        <button id="photography">PHOTOGRAPHY</button>
+        <button id="spatial">SPATIAL</button>
+        <button id="vcd">VCD</button>
+        <button id="vcd">INDUSTRIAL</button>
+    </div>
+    <div class="row">
+        
+ 
+        <div id="gallery">
+          <div class="item photography col-lg-3 col-md-3 col-sm-6 col-xs-6">  <img src="work/abbiePhillips.jpg" /> </div>
+          <div class="info">THIS IS THE INFO FOR THE PHOTOGRAPH</div>
+          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" />  <img src="work/aleishaFindlay.jpg" /> </div>
+          
+          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/alenaWoo.jpg" /> </div>
+          
+          <div class="item digital col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/amandaWaller.jpg" /> </div>
+          
+          <div class="item spatial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/amyBlackmore.jpg" /> </div>
+          
+          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/armeniaCole.jpg" /> </div>
+          
+          <div class="item fashion col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/abbyMattock.jpg" /> </div>
+          
+          <div class="item fashion col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/adamTraves.jpg" /> </div>
+          
+          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/fraserCallaway.jpg" /> </div>
+          
+          <div class="item spatial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/gemmaHazlett.jpg" /> </div> 
+          
+          <div class="item fashion col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/annLi.jpg" /> </div>
+          
+          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/alenaWoo.jpg" /> </div>
+          
+          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/amyRobinson.jpg" /> </div>
+          
+          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/breannaAlder.jpg" /> </div>
+          
+          <div class="item spatial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/briannaPoh.jpg" /> </div>
+          
+          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/cambellRoy.jpg" /> </div>
+          
+          <div class="item spatial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/cameronHolder.jpg" /> </div>
+          
+          <div class="item industrial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/danielGarland.jpg" /> </div>
+        </div>
 
+    </div>
+
+</div>
+
+<script>
+document.getElementById('photography').addEventListener('click', function() {
+  // hide all items:
+  var items = document.querySelectorAll('.item');
+  for (var i=0; i<items.length; i++) {
+      items[i].style.display = 'none';
+  }
+  // show all pop items:
+  var pops = document.querySelectorAll('.photography');
+  for (var i=0; i<pops.length; i++) {
+      pops[i].style.display = 'block';
+  }
+});
+
+document.getElementById('spatial').addEventListener('click', function() {
+  // hide all items:
+  var items = document.querySelectorAll('.item');
+  for (var i=0; i<items.length; i++) {
+      items[i].style.display = 'none';
+  }
+  // show all pop items:
+  var pops = document.querySelectorAll('.spatial');
+  for (var i=0; i<pops.length; i++) {
+      pops[i].style.display = 'block';
+  }
+});
+
+document.getElementById('vcd').addEventListener('click', function() {
+  // hide all items:
+  var items = document.querySelectorAll('.item');
+  for (var i=0; i<items.length; i++) {
+      items[i].style.display = 'none';
+  }
+  // show all pop items:
+  var pops = document.querySelectorAll('.vcd');
+  for (var i=0; i<pops.length; i++) {
+      pops[i].style.display = 'block';
+  }
+});
+</script>
+    
+    
+    <div class="navbar navbar-fixed-bottom">
+        
+        <div class="container">
+            <div class="row">
+                <div id="copyright">
+                    Copyright &copy; 2016
+                </div>
+                
+                <div id="social">
+                    <a href="https://www.facebook.com/cocamassey" target="_blank"><img src="facebook.jpg"></a>
+                    <a href="https://twitter.com/cocamassey"  target="_blank"><img src="twitter.jpg"></a>
+                    <a href="https://nz.pinterest.com/masseyuni/college-of-creative-arts/"  target="_blank"><img src=""></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

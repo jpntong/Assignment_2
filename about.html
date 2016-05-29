@@ -1,0 +1,126 @@
+
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+                <span class="glyphicon glyphicon-menu-hamburger" ></span>
+            </button>
+            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="logo" class="">
+                    <img src="img/logo.png">
+                </div>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="artists.html">Artists</a></li>
+                        <li><a href="#">About</a></li>
+                              
+        
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container galleryBody">
+        
+        <div class="row">
+            
+            <div class="information col-sm-6">
+                    The College of Creative Arts at Massey University is a world-class art and design school based in Wellington, New Zealand. In 2014 the College expanded its offerings through the new School of Music and Creative Media Production. 
+                    <br>
+                    <br>
+                    The College is:
+                    <br>
+                    <br>
+                    <ul>
+                    <li>ranked 3rd by RED DOT, the international design awards agency, which gives Massey a distinctive seal of quality for its design programmes</li>
+                    <li>the first art and design school outside North America to be awarded “substantial equivalency” by the US accreditation body NASAD – the most comprehensive international benchmark for art and design education in the world</li>
+                    <li>number one in New Zealand for design and visual art research, according to the 2012 New Zealand government Performance Based Research Funding round.</li>
+                    <li>Has a legacy of over a century of creative education.</li>
+                    <ul> 
+            </div>
+            
+            <div class="contact col-sm-6">
+                0800 MASSEY (General)
+                +64 4 801 5799
+                <br>
+                <br>
+                creative@massey.ac.nz
+                Massey University
+                College of Creative Arts
+                PO Box 756, Wellington,
+                6140, New Zealand.
+                
+                <div id="map"></div>
+
+
+    <script>
+      
+          function initMap() {
+        var myLatLng = {lat: -41.2985, lng:-185.2249};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+         
+        });
+      }
+      
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"async defer>
+        
+    </script>
+    
+
+            </div>
+        
+        </div>
+
+    </div>
+    
+    <div class="navbar navbar-fixed-bottom">
+        
+        <div class="container">
+            <div class="row">
+                <div id="copyright">
+                    Copyright &copy; 2016
+                </div>
+                
+                <div id="social">
+                    <a href="https://www.facebook.com/cocamassey" target="_blank"><img src="facebook.jpg"></a>
+                    <a href="https://twitter.com/cocamassey"  target="_blank"><img src="twitter.jpg"></a>
+                    <a href="https://nz.pinterest.com/masseyuni/college-of-creative-arts/"  target="_blank"><img src=""></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

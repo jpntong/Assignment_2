@@ -1,7 +1,10 @@
 
-
 * {
+<<<<<<< Updated upstream
    outline: 1px red solid; 
+=======
+   /* outline: 1px red solid;*/
+>>>>>>> Stashed changes
 }
 
 .html {
@@ -10,6 +13,7 @@
 }
 .body {
     overflow: hidden;
+<<<<<<< Updated upstream
 }
 
 .navbar-nav {
@@ -49,3 +53,107 @@
     height: 70px;
     
 }
+=======
+    
+}
+
+
+.galleryBody {
+   padding-top: 150px;
+}
+
+#gallery img {
+   opacity: 1;
+   -webkit-transition: opacity 0.5s;
+}
+
+#gallery img:hover {
+   opacity: 0.7;
+}
+
+.item img{
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.navbar-nav {
+    float:right;
+}
+
+.navbar-nav a {
+    -webkit-transition: background-color 0.5s;
+    color: black;
+}
+
+.navbar-nav a:hover {
+    background-color: grey;
+}    
+
+
+.leftHalf img {
+   width: 50%;
+   position: absolute;
+   left: 0px;
+   height: auto;
+}
+
+.rightHalf img {
+   width: 50%;
+   position: absolute;
+   right: 0px;
+   height: auto;
+}
+
+.navbar {
+    background-color:#c2d6df;
+    opacity:0.7;
+}
+
+#copyright {
+    float
+}
+
+#social img{
+    float:right;
+    height: 40px;
+}
+
+#logo img {
+    height: 70px;
+    
+}
+
+
+.selectors {
+    padding-top: 30px;
+}
+
+
+
+.info {
+    -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+    
+.gallery img:hover .info {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.artists img {
+    width: 400px;
+    display: inline-block;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+      }
+>>>>>>> Stashed changes

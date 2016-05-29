@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+                <span class="glyphicon glyphicon-menu-hamburger" ></span>
+            </button>
+            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="logo" class="">
+                    <img src="img/logo.png"
+                </div>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="">Work</a></li>
+                        <li><a href="#" class="">Artists</a></li>
+                        <li><a href="#" class="">About</a></li>
+                        <li><a href="#" class="">Search</a></li>
+        
+        
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+<div class="items container">
+    
+    <button id="pop">Pop</button>
+    
+    <div class="row">
+        
+ 
+        <div id="gallery">
+          <div class="item pop col-lg-3 col-md-3 col-sm-6 col-xs-6">  <img src="work/abbiePhillips.jpg" /> </div>
+          <div class="item rap col-lg-3 col-md-3 col-sm-6 col-xs-6" />  <img src="work/aleishaFindlay.jpg" /> </div>
+          <div class="item pop col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/alenaWoo.jpg" /> </div>
+          <div class="item pop col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/amandaWaller.jpg" /> </div>
+          <div class="item pop col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/amyBlackmore.jpg" /> </div>
+          <div class="item pop col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/armeniaCole.jpg" /> </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+document.getElementById('pop').addEventListener('click', function() {
+  // hide all items:
+  var items = document.querySelectorAll('.item');
+  for (var i=0; i<items.length; i++) {
+      items[i].style.display = 'none';
+  }
+  // show all pop items:
+  var pops = document.querySelectorAll('.pop');
+  for (var i=0; i<pops.length; i++) {
+      pops[i].style.display = 'block';
+  }
+});
+</script>
+    
+    
+    <div class="navbar navbar-fixed-bottom">
+        
+        <div class="container">
+            <div class="row">
+                <div id="copyright">
+                    Copyright &copy; 2016
+                </div>
+                
+                <div id="social">
+                    <a href="https://www.facebook.com/cocamassey" target="_blank"><img src="facebook.jpg"></a>
+                    <a href="https://twitter.com/cocamassey"  target="_blank"><img src="twitter.jpg"></a>
+                    <a href="https://nz.pinterest.com/masseyuni/college-of-creative-arts/"  target="_blank"><img src=""></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

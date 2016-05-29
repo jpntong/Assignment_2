@@ -1,0 +1,59 @@
+
+
+
+.blue {
+background-color: blue;
+border: 5px solid white;
+height: 40px;
+
+}
+
+.green {
+background-color: green;
+border: 5px solid white;
+height: 200px;
+
+}
+
+.orange {
+background-color: orange;
+border: 5px solid white;
+height: 120px;
+
+}
+
+.grey {
+background-color: grey;
+border: 5px solid white;
+height: 120px;
+
+}
+
+
+@media screen and (max-width:991px) {
+    
+.grey {
+    display: none;
+}
+
+.green {
+    height: 100px;
+}
+
+.orange {
+    height: 200px;
+}
+
+}
+
+@media screen and (max-width:1200px) {
+ 
+.green {
+    height: 150px;
+}
+
+.orange {
+    height: 100px;
+}
+    
+}    

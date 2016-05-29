@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+                <span class="glyphicon glyphicon-menu-hamburger" ></span>
+            </button>
+            
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="logo" class="">
+                    <img src="img/logo.png">
+                </div>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="work.html" class="">Work</a></li>
+                        <li><a href="#" class="">Artists</a></li>
+                        <li><a href="about.html" class="">About</a></li>
+                        <li><a href="#" class="">Search</a></li>
+        
+        
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+<div class="galleryBody container">
+    
+    <div class="selectors">
+        <button id="photography">PHOTOGRAPHY</button>
+        <button id="spatial">SPATIAL</button>
+        <button id="vcd">VCD</button>
+        <button id="vcd">INDUSTRIAL</button>
+    </div>
+    <div class="row">
+        
+        <div class="artists">
+ 
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Abbie Phillips <img src="artists/abbiePhillips.jpg"> </div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Abby Mattock <img src="artists/abbyMattock.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Adam Traves <img src="artists/adamTraves.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Aleisha Findlay <img src="artists/aleishaFindlay.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Alena Woo <img src="artists/alenaWoo.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Alissa Corbett <img src="artists/alissaCorbett.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Amanda Waller <img src="artists/amandaWaller.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Amy Blackmore <img src="artists/amyBlackmore.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Amy Robinson <img src="artists/amyRobinson.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Anna Williams <img src="artists/annaWilliams.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Ann Li <img src="artists/annLi.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Armenia Cole <img src="artists/armeniaCole.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Breanna Alder <img src="artists/breannaAlder.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Brianna Poh <img src="artists/briannaPoh.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Cambell Roy <img src="artists/cambellRoy.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Cameron Holder <img src="artists/cameronHolder.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Daniel Garland <img src="artists/danielGarland.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Frances Scott <img src="artists/francesScott.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Fraser Callaway <img src="artists/fraserCallaway.jpg"</div>
+        <div class="item  col-lg-6 col-md-6 col-sm-12 col-xs-12" /> Gemma Hazlett <img src="artists/gemmaHazlett.jpg"</div>
+        
+        </div>
+          
+    </div>
+</div>
+
+<script>
+document.getElementById('photography').addEventListener('click', function() {
+  // hide all items:
+  var items = document.querySelectorAll('.item');
+  for (var i=0; i<items.length; i++) {
+      items[i].style.display = 'none';
+  }
+  // show all pop items:
+  var pops = document.querySelectorAll('.photography');
+  for (var i=0; i<pops.length; i++) {
+      pops[i].style.display = 'block';
+  }
+});
+
+document.getElementById('spatial').addEventListener('click', function() {
+  // hide all items:
+  var items = document.querySelectorAll('.item');
+  for (var i=0; i<items.length; i++) {
+      items[i].style.display = 'none';
+  }
+  // show all pop items:
+  var pops = document.querySelectorAll('.spatial');
+  for (var i=0; i<pops.length; i++) {
+      pops[i].style.display = 'block';
+  }
+});
+
+document.getElementById('vcd').addEventListener('click', function() {
+  // hide all items:
+  var items = document.querySelectorAll('.item');
+  for (var i=0; i<items.length; i++) {
+      items[i].style.display = 'none';
+  }
+  // show all pop items:
+  var pops = document.querySelectorAll('.vcd');
+  for (var i=0; i<pops.length; i++) {
+      pops[i].style.display = 'block';
+  }
+});
+</script>
+    
+    
+    <div class="navbar navbar-fixed-bottom">
+        
+        <div class="container">
+            <div class="row">
+                <div id="copyright">
+                    Copyright &copy; 2016
+                </div>
+                
+                <div id="social">
+                    <a href="https://www.facebook.com/cocamassey" target="_blank"><img src="facebook.jpg"></a>
+                    <a href="https://twitter.com/cocamassey"  target="_blank"><img src="twitter.jpg"></a>
+                    <a href="https://nz.pinterest.com/masseyuni/college-of-creative-arts/"  target="_blank"><img src=""></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
