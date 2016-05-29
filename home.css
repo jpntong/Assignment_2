@@ -1,70 +1,40 @@
 
 * {
-<<<<<<< Updated upstream
-   outline: 1px red solid; 
-=======
-   /* outline: 1px red solid;*/
->>>>>>> Stashed changes
+   /* outline: 1px red solid; */
 }
 
 .html {
-    background-color: #f5f5f5;
+  
     overflow: hidden;
 }
 .body {
     overflow: hidden;
-<<<<<<< Updated upstream
-}
-
-.navbar-nav {
-    float:right;
-}
-
-
-.leftHalf img {
-   width: 50%;
-   position: absolute;
-   left: 0px;
-   height: auto;
-}
-
-.rightHalf img {
-   width: 50%;
-   position: absolute;
-   right: 0px;
-   height: auto;
-}
-
-.navbar {
-    background-color:#c2d6df;
-    opacity:0.7;
-}
-
-#copyright {
-    float
-}
-
-#social img{
-    float:right;
-    height: 40px;
-}
-
-#logo img {
-    height: 70px;
+      background-color: #f5f5f5;
     
 }
-=======
-    
-}
-
 
 .galleryBody {
-   padding-top: 150px;
+   padding-top: 80px;
 }
 
+#gallery div {
+    width:200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+
 #gallery img {
+  
    opacity: 1;
-   -webkit-transition: opacity 0.5s;
+     -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+ 
+    margin-right: auto;
+    margin-left: auto;
+   
 }
 
 #gallery img:hover {
@@ -83,7 +53,13 @@
 
 .navbar-nav a {
     -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    transition: background-color 0.5s;
     color: black;
+    height: 70px;
+    width: 100px;
+    text-align: center;
 }
 
 .navbar-nav a:hover {
@@ -110,9 +86,7 @@
     opacity:0.7;
 }
 
-#copyright {
-    float
-}
+
 
 #social img{
     float:right;
@@ -121,31 +95,46 @@
 
 #logo img {
     height: 70px;
+    float:left;
     
 }
 
 
-.selectors {
-    padding-top: 30px;
+.selectors button {
+    height: 50px;
+    background-color: white;
+    border: none;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    
+}
+
+.selectors button:hover {
+    background-color: grey;
 }
 
 
 
 .info {
     -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+    -moz-transition: visibility 0.5s, opacity 0.5s linear;
+    -o-transition: visibility 0.5s, opacity 0.5s linear;
+    transition: visibility 0.5s, opacity 0.5s linear;
     opacity: 0;
     visibility: hidden;
-}
-    
-.gallery img:hover .info {
-    opacity: 1;
-    visibility: visible;
 }
 
 
 .artists img {
     width: 400px;
     display: inline-block;
+}
+
+#copyright {
+    float: left;
+    padding-top: 10px;
 }
 
 #map {
@@ -156,4 +145,3 @@
     -webkit-filter: grayscale(50%);
     filter: grayscale(50%);
       }
->>>>>>> Stashed changes

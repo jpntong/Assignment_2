@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Home</title>
+    <title>CMP - Work</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="home.css">
@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div id="logo" class="">
-                    <img src="img/logo.png">
+                   <a href="index.html"><img src="img/logo.png"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="nav navbar-nav">
@@ -41,6 +41,7 @@
             </div>
         </div>
     </div>
+       
 
     
     
@@ -57,9 +58,6 @@
         
  
         <div id="gallery">
-          <div class="item photography col-lg-3 col-md-3 col-sm-6 col-xs-6">  <img src="work/abbiePhillips.jpg" /> </div>
-          <div class="info">THIS IS THE INFO FOR THE PHOTOGRAPH</div>
-          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" />  <img src="work/aleishaFindlay.jpg" /> </div>
           
           <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/alenaWoo.jpg" /> </div>
           
@@ -97,6 +95,23 @@
     </div>
 
 </div>
+
+<script>
+images = [
+    ['work/abbiePhillips.jpg', 'photography', 'p'],
+    ['work/aleishaFindlay.jpg', 'vcd', 'l'],
+    ['3.jpg', 'vcd', 'p']
+];
+
+for (var i=0; i<images.length; i++) {
+    var src = images[i][0];
+    var cat = images[i][1];
+    var ori = images[i][2];
+    
+    document.write('<img src="'+src+'" class="'+cat+' '+ori+'" />');
+    document.write('<br />');
+}
+</script>
 
 <script>
 document.getElementById('photography').addEventListener('click', function() {
