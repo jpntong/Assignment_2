@@ -1,31 +1,39 @@
 
 * {
-   /* outline: 1px red solid; */
+    outline: 1px red solid;
 }
 
 .html {
   
     overflow: hidden;
 }
+
 .body {
     overflow: hidden;
-      background-color: #f5f5f5;
-    
+      background-color: #f5f5f5;    
 }
 
 .galleryBody {
    padding-top: 80px;
 }
 
-#gallery div {
-    width:200px;
-    height: 200px;
-    overflow: hidden;
-}
+.gallery div {
+        width:200px;     
+        height:200px;    
+        overflow:hidden;    
+    }
 
+.p {
+        width:auto;
+        height: 200px;   
+    }
+
+.l {
+        width:200px;
+        height: auto; 
+    }
 
 #gallery img {
-  
    opacity: 1;
      -webkit-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;

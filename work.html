@@ -58,39 +58,14 @@
         
  
         <div id="gallery">
+                                        
           
-          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/alenaWoo.jpg" /> </div>
           
-          <div class="item digital col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/amandaWaller.jpg" /> </div>
           
-          <div class="item spatial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/amyBlackmore.jpg" /> </div>
           
-          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/armeniaCole.jpg" /> </div>
           
-          <div class="item fashion col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/abbyMattock.jpg" /> </div>
           
-          <div class="item fashion col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/adamTraves.jpg" /> </div>
-          
-          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/fraserCallaway.jpg" /> </div>
-          
-          <div class="item spatial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/gemmaHazlett.jpg" /> </div> 
-          
-          <div class="item fashion col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/annLi.jpg" /> </div>
-          
-          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/alenaWoo.jpg" /> </div>
-          
-          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/amyRobinson.jpg" /> </div>
-          
-          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/breannaAlder.jpg" /> </div>
-          
-          <div class="item spatial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/briannaPoh.jpg" /> </div>
-          
-          <div class="item vcd col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/cambellRoy.jpg" /> </div>
-          
-          <div class="item spatial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/cameronHolder.jpg" /> </div>
-          
-          <div class="item industrial col-lg-3 col-md-3 col-sm-6 col-xs-6" /> <img src="work/danielGarland.jpg" /> </div>
-        </div>
+     </div>
 
     </div>
 
@@ -100,16 +75,36 @@
 images = [
     ['work/abbiePhillips.jpg', 'photography', 'p'],
     ['work/aleishaFindlay.jpg', 'vcd', 'l'],
-    ['3.jpg', 'vcd', 'p']
+    ['work/alenaWoo.jpg', 'vcd', 'p'],
+    ['work/amandaWaller.jpg', 'digital', 'l'],
+    ['work/amyBlackmore.jpg', 'spatial', 'l'],
+    ['work/armeniaCole.jpg', 'vcd', 'l'],
+    ['work/abbyMattock.jpg', 'fashion', 'p'],
+    ['work/adamTraves.jpg', 'fashion', 'l'],
+    ['work/fraserCallaway.jpg', 'vcd', 'l'],
+    ['work/gemmaHazlett.jpg', 'spatial', 'l'],
+    ['work/annLi.jpg', 'fashion', 'l'],
+    ['work/amyRobinson.jpg', 'vcd', 'p'],
+    ['work/breannaAlder.jpg', 'vcd', 'p'],
+    ['work/briannaPoh.jpg', 'spatial', 'p'],
+    ['work/cambellRoy.jpg', 'vcd', 'p'],
+    ['work/cameronHolder.jpg', 'spatial', 'l'],
+    ['work/danielGarland.jpg', 'industrial', 'l']
+    
 ];
 
+    document.write('<div class="container">');
+    document.write('<div class="row">');
+    
 for (var i=0; i<images.length; i++) {
     var src = images[i][0];
     var cat = images[i][1];
     var ori = images[i][2];
     
-    document.write('<img src="'+src+'" class="'+cat+' '+ori+'" />');
-    document.write('<br />');
+    
+    document.write('<img src="'+src+'" class="'+cat+' '+ori+' '+' item ' + ' col-xl-3 ' + ' col-lg-3 ' + ' col-md-4 ' + ' col-sm-6 ' + ' col-xs-6 " />');
+    document.write('</div>');
+    document.write('</div>')
 }
 </script>
 
@@ -120,7 +115,7 @@ document.getElementById('photography').addEventListener('click', function() {
   for (var i=0; i<items.length; i++) {
       items[i].style.display = 'none';
   }
-  // show all pop items:
+  // show all photography items:
   var pops = document.querySelectorAll('.photography');
   for (var i=0; i<pops.length; i++) {
       pops[i].style.display = 'block';
@@ -133,7 +128,7 @@ document.getElementById('spatial').addEventListener('click', function() {
   for (var i=0; i<items.length; i++) {
       items[i].style.display = 'none';
   }
-  // show all pop items:
+  // show all spatial items:
   var pops = document.querySelectorAll('.spatial');
   for (var i=0; i<pops.length; i++) {
       pops[i].style.display = 'block';
@@ -146,8 +141,22 @@ document.getElementById('vcd').addEventListener('click', function() {
   for (var i=0; i<items.length; i++) {
       items[i].style.display = 'none';
   }
-  // show all pop items:
+  // show all vcd items:
   var pops = document.querySelectorAll('.vcd');
+  for (var i=0; i<pops.length; i++) {
+      pops[i].style.display = 'block';
+  }
+});
+
+
+document.getElementById('industrial').addEventListener('click', function() {
+  // hide all items:
+  var items = document.querySelectorAll('.item');
+  for (var i=0; i<items.length; i++) {
+      items[i].style.display = 'none';
+  }
+  // show all vcd items:
+  var pops = document.querySelectorAll('.industrial');
   for (var i=0; i<pops.length; i++) {
       pops[i].style.display = 'block';
   }
