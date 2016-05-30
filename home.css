@@ -1,5 +1,6 @@
 
 * {
+
   /*  outline: 1px red solid;*/
 
 }
@@ -10,16 +11,22 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+    outline: 1px red solid;
+}
+
+.html {
+  
+    overflow: hidden;
 }
 
 .body {
     overflow: hidden;
       background-color: #f5f5f5;    
-
 }
 
-.navbar-nav {
-    float:right;
+.galleryBody {
+   padding-top: 80px;
 }
 
 .gallery div {
@@ -37,6 +44,7 @@
         width:200px;
         height: auto; 
     }
+<<<<<<< HEAD
 
 .leftHalf img {
    width: 50%;
@@ -75,11 +83,17 @@
 .galleryBody {
    padding-top: 150px;
 }
->>>>>>> origin/master
 
 #gallery img {
    opacity: 1;
-   -webkit-transition: opacity 0.5s;
+     -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+ 
+    margin-right: auto;
+    margin-left: auto;
+   
 }
 
 #gallery img:hover {
@@ -98,7 +112,13 @@
 
 .navbar-nav a {
     -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    transition: background-color 0.5s;
     color: black;
+    height: 70px;
+    width: 100px;
+    text-align: center;
 }
 
 .navbar-nav a:hover {
@@ -125,6 +145,7 @@
     opacity:0.7;
 }
 
+
 #copyright {
 }
 
@@ -135,33 +156,46 @@
 
 #logo img {
     height: 70px;
+    float:left;
     
 }
 
 
-.selectors {
-    padding-top: 30px;
+.selectors button {
+    height: 50px;
+    background-color: white;
+    border: none;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    
+}
+
+.selectors button:hover {
+    background-color: grey;
 }
 
 
 
 .info {
     -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+    -moz-transition: visibility 0.5s, opacity 0.5s linear;
+    -o-transition: visibility 0.5s, opacity 0.5s linear;
+    transition: visibility 0.5s, opacity 0.5s linear;
     opacity: 0;
     visibility: hidden;
-}
-    
-.gallery img:hover .info {
-    opacity: 1;
-    visibility: visible;
 }
 
 
 .artists img {
-   width: 400px;
-   display: block;
-   position:relative;
-   z-index:-1;
+    width: 400px;
+    display: inline-block;
+}
+
+#copyright {
+    float: left;
+    padding-top: 10px;
 }
 
 #map {
@@ -172,24 +206,3 @@
     -webkit-filter: grayscale(50%);
     filter: grayscale(50%);
       }
-      
-.grad{
-  position:relative;
-  display:inline-block;
-}
-.grad:after{
-  content:'';
-  position:absolute;
-  left:0; top:0;
-  width:100%; height:100%;
-  display:inline-block;
-  background: -webkit-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)); /*Safari 5.1-6*/
-  background: -o-linear-gradient(left,rgba(255,255,255,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1)); /*Fx 3.6-15*/
-  background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1)); /*Standard*/
-}
-
-img{
-  display:block;
-  height:200px;width:auto;
-}
